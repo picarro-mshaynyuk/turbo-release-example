@@ -1,5 +1,11 @@
 # docs
 
+## 2.0.1
+
+### Patch Changes
+
+- 11272d7: testing purposes
+
 ## 2.0.0
 
 ### Major Changes
