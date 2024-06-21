@@ -1,5 +1,0 @@
----
-"docs": major
----
-
-init release
