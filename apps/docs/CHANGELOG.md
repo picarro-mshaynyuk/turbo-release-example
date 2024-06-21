@@ -1,5 +1,11 @@
 # docs
 
+## 2.0.2
+
+### Patch Changes
+
+- f5c8cc3: patch okary attempt 2
+
 ## 2.0.1
 
 ### Patch Changes
