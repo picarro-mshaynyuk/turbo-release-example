@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- 5511e7f: another release test
+
+## 2.0.1
+
+### Patch Changes
+
 - 11272d7: testing purposes
 
 ## 2.0.0
