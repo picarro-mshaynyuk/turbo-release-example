@@ -12,8 +12,6 @@ permissions:
   packages: write
   pull-requests: write
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
-
 jobs:
   release:
     name: Release
@@ -48,6 +46,17 @@ jobs:
           publish: pnpm run publish-packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  trmp:
+    name: ok
+    runs-on: ubuntu-latest
+    needs: release
+    steps:
+      - name: Test released packages
+        run: |
+          echo Begin
+          echo "${{ needs.release.outputs.publishedPackages }}"
+          echo END!
 
   packages_to_build:
     name: Get Released Packages
