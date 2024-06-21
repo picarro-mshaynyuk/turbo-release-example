@@ -12,6 +12,8 @@ permissions:
   packages: write
   pull-requests: write
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   release:
     name: Release

@@ -3,6 +3,10 @@ name: docs
 on:
   workflow_call:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}-docs
+  cancel-in-progress: true
+
 permissions:
   contents: read
   packages: write
